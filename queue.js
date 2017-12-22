@@ -1,3 +1,5 @@
+'use strict';
+
 function createNode(data = null, next = null, prev = null) {
   return { data, next, prev };
 }
@@ -10,7 +12,6 @@ class Queue {
 
   enqueue(data) {
     const node = createNode(data);
-
     if (this.last) {
       node.next = this.last;
       this.last.prev = node;
@@ -37,22 +38,14 @@ class Queue {
 
     return node.data;
   }
-
-  display() {
-    let node = this.first;
-    while (node !== null) {
-      console.log(node.data);
-      node = node.prev;
-    }
-  }
-
-  peek() {
-    if (this.first === null) {
-      return null;
-    }
-
-    return this.first.data;
-  }
 }
 
-module.exports = { Queue };
+function peek(queue) {
+  if (queue.first === null) {
+    return null;
+  }
+
+  return queue.first.data;
+}
+
+module.exports = { Queue, peek };

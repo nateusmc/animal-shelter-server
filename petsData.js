@@ -32,8 +32,8 @@ const catData = [
 
 const dogData = [
     {
-      imageURL: 'https://www.dogster.com/wp-content/uploads/2015/05/Cute%20dog%20listening%20to%20music%201_1.jpg',
-      imageDescription: 'A smiling golden-brown golden retreiver listening to music.',
+      imageURL: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Golden_Retriever_Carlos_%2810581910556%29.jpg/1200px-Golden_Retriever_Carlos_%2810581910556%29.jpg',
+      imageDescription: 'A smiling golden-brown golden retreiver.',
       name: 'Zeus',
       sex: 'Male',
       age: 3,
@@ -41,7 +41,7 @@ const dogData = [
       story: 'Owner Passed away',
     },
     {
-      imageURL: 'https://cdn2-www.dogtime.com/assets/uploads/gallery/newfoundland-dogs-and-puppies/newfoundland-dogs-puppies-1.jpg',
+      imageURL: 'https://www.dog-breeds-expert.com/images/Newfoundland-flickr.jpg',
       imageDescription: 'A smiling newfoundland ready for a new home',
       name: 'Bella',
       sex: 'Female',
